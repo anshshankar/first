@@ -1,0 +1,42 @@
+<html>
+<body style="background-color:black;color:yellow;text-align:center; ">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h1 style="text-align:center;background-color:black;color:yellow;font-size:300%;"><u> Pronunciation</u></h1><br><br>
+<p style="font-size:150%;">
+
+<hr size="20" color="red" width="75%"><br>
+<hr size="15" color="blue" width="50%"><br>
+<hr size="10" color="green" width="30%%"><br><br><br>
+
+ <form action="pn" method = 'POST' style="text-align:center;">
+
+{% csrf_token %}
+
+
+ Click here to Play Pronunciation &nbsp  
+
+<button style="font-size:24px">play &nbsp<i class="fa fa-play">
+{% if data %}
+
+    {{data}}
+
+    {% endif %}
+</i></button><br><br><br>
+
+    
+</form>
+
+  <a href="http://localhost:8000" style="color:yellow; font-size:150%;">Click Here to go to Re-Enter the Word </a><br><br>
+
+
+
+<br><br>
+
+<hr size="10" color="green" width="30%"><br>
+<hr size="15" color="blue" width="50%"><br>
+<hr size="20" color="red" width="75%%"><br>
+
+
+</p>
+</body>
+</html>
