@@ -1,0 +1,36 @@
+<html>
+<body style="background-color:black;color:yellow; text-align:center;">
+<h1 style="text-align:center;background-color:black;color:yellow;font-size:300%;"><u>  Antonyms </u></h1><br><br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<style> 
+      blink {
+      color: #1c87c9;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: sans-serif;
+      }
+    </style>
+</head>
+<hr size="20" color="red" width="75%"><br>
+<hr size="15" color="blue" width="50%"><br>
+<hr size="10" color="green" width="30%%"><br>
+
+<p style="font-size:150%;">
+
+ {% if data %}
+The antonym of word is:<br><br><u>
+{{data}}
+{% else %}
+<blink style="color:red">
+  NOT FOUND!
+</blink>
+{% endif %}
+<br><br></u>
+  <a href="http://localhost:8000" style="color:yellow; font-size:100%;">Click Here  to Re-Enter the Word </a>
+</p><br>
+<hr size="10" color="green" width="30%"><br>
+<hr size="15" color="blue" width="50%"><br>
+<hr size="20" color="red" width="75%%"><br>
+</body>
+</html>

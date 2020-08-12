@@ -1,0 +1,31 @@
+<html>
+<h1 style="text-align:center;background-color:black;color:yellow;"><marquee direction="left" behavior="alternate" style="height:60px"><u>DICTIONARY</marquee></u></h1>
+<body style="background-color:black;color:yellow;">
+
+<hr size="20" color="red" width="75%"><br>
+<hr size="15" color="blue" width="50%"><br>
+<hr size="10" color="green" width="30%%"><br>
+
+<marquee direction="up">
+<h2 style="text-align:center;background-color:black;color:yellow;"> <u>WELCOME TO THE ARENA OF WORDS </u> </h2><br><br>
+</marquee>
+
+<br><br>
+  <form action="a" method = 'POST' style="text-align:center;">
+  ENTER A WORD AND CLICK ON SUBMIT TO PERFORM OPERATION<BR><br><br>
+
+   {% csrf_token %}
+
+   ENTER A WORD :<input type="text" name="word" autocomplete="off"><br><br><br>
+  <button type="submit" >submit</button>
+  </form>
+
+<br>
+<hr size="10" color="green" width="30%"><br>
+<hr size="15" color="blue" width="50%"><br>
+<hr size="20" color="red" width="75%%"><br>
+
+</body>
+</html>
+
+
